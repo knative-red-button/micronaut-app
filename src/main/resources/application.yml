@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: micronaut-basic
+  server:
+    port: ${PORT:8080}
