@@ -4,7 +4,7 @@ import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 
-@Controller("/")
+@Controller("/hello")
 public class HelloWorldController {
 
     @Get(produces = MediaType.TEXT_PLAIN)
@@ -13,6 +13,6 @@ public class HelloWorldController {
         if (target == null) {
             target = "NOT SPECIFIED";
         }
-        return "Hello World: " + target;
+        return "Hello " + target;
     }
 }
